@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title></title>
+ 
+<style type="text/css">
+    .tboxes{
+      border: 2px inset white;
+    }
+</style>  
+ 
+</head>
+<body>
+ 
+ 
+<table style="width:40%; text-align:center;">
+  <form>
+ 
+  <tr>
+    <td style="border:1px dotted grey;">Job Title</td>
+    <td style="border:1px dotted grey;"><input id="a" class="tboxes" type="text" name=""></td>
+  </tr>
+    <tr>
+    <td style="border:1px dotted grey;">Description</td>
+    <td style="border:1px dotted grey;"><textarea id="m"></textarea>
+      <br>
+      <p style="text-align:left;">Brief Description should have atmost 500 characters.</p>
+    </td>
+  </tr>
+ 
+  <tr>
+    <td style="border:1px dotted grey;">Company's Name:</td>
+    <td style="border:1px dotted grey;"><input id="b" class="tboxes" type="text" name=""></td>
+  </tr>
+ 
+  <tr>
+    <td style="border:1px dotted grey;">Contact Number:</td>
+    <td style="border:1px dotted grey;"><input id="c" class="tboxes" type="text" name=""></td>
+  </tr>
+ 
+  <tr>
+    <td style="border:1px dotted grey;">Contact Person:</td>
+    <td style="border:1px dotted grey;"><input id="d" class="tboxes" type="text" name=""></td>
+  </tr>
+ 
+  <tr>
+    <td style="border:1px dotted grey;">Email:</td>
+    <td style="border:1px dotted grey;"><input id="e" class="tboxes" type="email" name=""></td>
+  </tr>
+ 
+  <tr>
+    <td style="border:1px dotted grey;">Work Status:</td>
+    <td style="border:1px dotted grey;"><label>Full Time</label><input id="f" type="checkbox" name="Full Time">
+    <label>Part Time</label><input id="g" type="checkbox" name="Full Time">
+    <label>Per Dim</label><input id="h" type="checkbox" name="Full Time">
+    <label>Others</label><input id="i" type="checkbox" name="Full Time"></td>
+  </td>
+  </td>
+ 
+  </tr>
+ 
+    <tr>
+    <td style="border:1px dotted grey;">Salary:</td>
+    <td style="border:1px dotted grey;"><input id="j" class="tboxes" type="text" name=""></td>
+  </tr>
+ 
+  <tr>
+    <td style="border:1px dotted grey;">Experience(Years):</td>
+    <td style="border:1px dotted grey;"><input id="k" class="tboxes" type="text" name=""></td>
+  </tr>
+ 
+    <tr>
+    <td style="border:1px dotted grey;">Locations:</td>
+    <td style="border:1px dotted grey;"><input id="l" class="tboxes" type="text" name=""></td>
+  </tr>
+ 
+  <tr>
+    <td style="border:1px dotted grey;">Qualification:</td>
+    <td style="border:1px dotted grey;">
+      <select size="4">
+        <option>Any</option>
+        <option>High School</option>
+        <option>Associate</option>
+        <option>Pre Bachelors</option>
+      </select>
+      <input type="submit" value="ADD>>" name="">
+      <input type="submit" value="<<Remove" name="">
+      <select size="4">
+        <option>Any</option>
+      </select>
+ 
+      <tr>
+    <td style="border:1px dotted grey; text-align:right;"><input type="submit" value="submit" id="sub"></td>
+    <td style="border:1px dotted grey; text-align:left;"><input type="submit" value="Reset" id="res" name=""></td>
+  </tr>
+ 
+ 
+    </td>
+  </tr>
+ 
+</form>
+ 
+</table>
+ 
+<script type="text/javascript">
+ 
+document.getElementById("res").onclick = function(){
+  document.getElementById("a").value="";
+  document.getElementById("b").value="";
+  document.getElementById("c").value="";
+  document.getElementById("d").value="";
+  document.getElementById("e").value="";
+  document.getElementById("f").value="";
+  document.getElementById("g").value="";
+  document.getElementById("h").value="";
+  document.getElementById("i").value="";
+  document.getElementById("k").value="";
+  document.getElementById("l").value="";
+  document.getElementById("m").value="";
+}
+ 
+document.getElementById("sub").onclick= function(){
+  if(document.getElementById("a").value=="" || document.getElementById("b").value=="" || document.getElementById("c").value=="" || document.getElementById("d").value=="" || document.getElementById("e").value=="" || document.getElementById("f").value=="" || document.getElementById("g").value=="" || document.getElementById("h").value=="" || document.getElementById("i").value=="" || document.getElementById("k").value=="" || document.getElementById("l").value=="" || document.getElementById("m").value==""){
+    alert("A field is left empty");
+  }
+  else{
+    alert("Form Submitted");
+  }
+ 
+}
+</script>
+ 
+</body>
+</html>
